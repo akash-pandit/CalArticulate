@@ -1,7 +1,7 @@
 import requests
 import json
 
-def gen_institutions_dict():
+def gen_institutions_dict() -> dict[str, str]:
     institutions = dict()
 
     try:
@@ -37,7 +37,7 @@ def gen_institutions_dict():
 
     
     
-if __name__ == '__main__':
+def main() -> None:
     inst_dict = gen_institutions_dict()
 
     if not inst_dict:
@@ -61,3 +61,7 @@ if __name__ == '__main__':
         json.dump(cc_insts, file, indent=4)
 
     print("California CC institutions stored")
+
+
+if __name__ == '__main__':
+    main()
