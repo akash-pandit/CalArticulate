@@ -29,6 +29,11 @@ def get_agreement_years(inst_id: str) -> dict[int, int]:
     return agreement_years
 
 
+def get_url(year, cc_id, state_id) -> str:
+    return f"https://assist.org/transfer/results?year={year}&institution={cc_id}&agreement={state_id}&agreementType=to" + \
+        f"&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey={year}%2F{cc_id}%2Fto%2F{state_id}%2FAllMajors"
+
+
 def get_urls() -> dict[str, list]:
     # for future reference:
     # institution id: the 'home school' id which has agreements with state schools (cc)
@@ -49,8 +54,7 @@ def get_urls() -> dict[str, list]:
             if not year:
                 continue  # there has never been an agreement between these institutions
 
-            url = f"https://assist.org/transfer/results?year={year}&institution={cc_id}" + \
-            f"&agreement={state_id}&agreementType=to&view=agreement&viewBy=major&viewSendingAgreements=false"
+            url = get_url(year=year, cc_id=cc_id, state_id=state_id)
 
             urls[state_id].append(url)
 
