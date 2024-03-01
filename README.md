@@ -46,7 +46,7 @@ CalArticulate/                          root
 │       ├── gen_institutions.py         out: data/institutions_*.json
 │       └── gen_urls.py                 in: data/institutions_*.json, out: data/assist_urls.json
 │
-├── LICENSE                             GPL 2.0 License
+├── LICENSE                             GPL 3.0 License
 ├── package-lock.json                   npm-generated exact package record
 ├── package.json                        define project metadata & dependencies
 └── README.md                           You Are Here, currently visualizes & explains proj file structure
