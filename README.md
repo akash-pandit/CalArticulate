@@ -31,7 +31,6 @@ CalArticulate/                          root
 │
 ├── node_modules/*                      self explanatory
 |
-│
 ├── scripts/                            contains scripts for creating db
 │   ├── js/                             js scripts for db generation
 │   │   ├── Dockerfile                  dockerfile for running js scripts & tests & populating db
