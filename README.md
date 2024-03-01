@@ -1,3 +1,11 @@
+# CalArticulate
+
+Web app for finding articulated california community college courses for a given UC/CSU course. Data sourced from ASSIST.org. TBD!
+
+While ASSIST is great when it comes to mapping programs between unis and ccs or even transferrable courses by community college, looking for transferrable courses by university course across several CCs is a *huge* pain. 
+
+That's what this project plans to address!
+
 ## Current Issues & TBDs
 issues:
 - figure out why getCourses() in scrapeFuncs.js no no worky
@@ -10,6 +18,8 @@ tbds -> db finished:
 
 ## File Structure & Descriptions
 
+
+```
 CalArticulate/                          root
 │
 ├── app/                                actual web app code, tbd
@@ -19,7 +29,8 @@ CalArticulate/                          root
 │   ├── institutions_cc.json            maps url id to name for ccs
 │   └── institutions_state.json         maps url id to name for state unis
 │
-├── node_modules/                       self explanatory
+├── node_modules/*                      self explanatory
+|
 │
 ├── scripts/                            contains scripts for creating db
 │   ├── js/                             js scripts for db generation
@@ -41,3 +52,4 @@ CalArticulate/                          root
 ├── package-lock.json                   npm-generated exact package record
 ├── package.json                        define project metadata & dependencies
 └── README.md                           You Are Here, currently visualizes & explains proj file structure
+```
