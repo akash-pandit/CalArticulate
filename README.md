@@ -33,10 +33,13 @@ CalArticulate/                          root
 |
 ├── scripts/                            contains scripts for creating db
 │   ├── js/                             js scripts for db generation
-│   │   ├── tests/
-│   │   │   ├── scrapeURLs.test.js          unit tests for scrapeFuncs.js
-│   │   │   └── test_course_data.html       test data for scrapeURLs.test.js
+|   |   ├── node_modules/*              node modules for js scripts
+│   │   ├── tests/                      js tests, WIP
+│   │   │   ├── scrapeURLs.test.js      unit tests for scrapeFuncs.js
+│   │   │   └── test_course_data.html   test data for scrapeURLs.test.js
 │   │   ├── Dockerfile                  dockerfile for running js scripts & tests & populating db
+│   │   ├── package-lock.json           npm-generated exact package record
+│   │   ├── package.json                define project metadata & dependencies
 │   │   ├── scrapeFuncs.js              utility funcs for scrapeURLsMain.json
 │   │   └── scrapeURLsMain.js           in: data/assist_urls.json, out: TBD
 |   |
@@ -47,7 +50,5 @@ CalArticulate/                          root
 │       └── gen_urls.py                 in: data/institutions_*.json, out: data/assist_urls.json
 │
 ├── LICENSE                             GPL 3.0 License
-├── package-lock.json                   npm-generated exact package record
-├── package.json                        define project metadata & dependencies
 └── README.md                           You Are Here, currently visualizes & explains proj file structure
 ```
