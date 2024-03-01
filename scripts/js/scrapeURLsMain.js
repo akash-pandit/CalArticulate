@@ -3,7 +3,8 @@ const puppeteer = require("puppeteer");
 const { scrapeURL } = require("./scrapeFuncs.js");
 
 (async () => {
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch({headless: 'shell', 
+    args: ['--no-sandbox', '--disable-setuid-sandbox']})
 
     for (let stateID of Object.keys(urlsBy4yr)) {
 
