@@ -47,7 +47,7 @@ CalArticulate/                          root
 │   │   └── test_course_data.html       test data for scrapeURLs.test.js
 │   └── python/                         python tests, TBD
 │
-├── LICENSE                             GPL 2.0 License
+├── LICENSE                             GPL 3.0 License
 ├── package-lock.json                   npm-generated exact package record
 ├── package.json                        define project metadata & dependencies
 └── README.md                           You Are Here, currently visualizes & explains proj file structure
